@@ -1,5 +1,11 @@
-native_modules_demo
+Native Modules Demo for RN
 ====================================
+
+Base project generated with Wolox wolmo-react-native generator bootstrap
+
+https://github.com/Wolox/wolmo-bootstrap-react-native
+
+
 
 # Prerequisites
 
