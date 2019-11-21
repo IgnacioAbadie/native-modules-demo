@@ -6,6 +6,7 @@ import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Environment;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
@@ -33,7 +34,8 @@ public class ScreenshotHelperModuleManager extends ReactContextBaseJavaModule {
     @RequiresApi(api = Build.VERSION_CODES.N)
     @ReactMethod
     public void takeScreenshot(Callback callback) {
-
+    Integer x = 0;
+        Integer y = 0;
         Activity activity = getCurrentActivity();;
         View view = activity.getWindow().getDecorView();
         view.setDrawingCacheEnabled(true);
@@ -47,9 +49,18 @@ public class ScreenshotHelperModuleManager extends ReactContextBaseJavaModule {
         int width = activity.getWindowManager().getDefaultDisplay().getWidth();
         int height = activity.getWindowManager().getDefaultDisplay().getHeight();
 
-        Bitmap b = Bitmap.createBitmap(b1, 0, statusBarHeight, width, height - statusBarHeight);
+        int screenHeight = height - statusBarHeight - 147;
+        int squareWidth = width / 3;
+        int squareHeight = screenHeight / 3;
+
+        Bitmap b = Bitmap.createBitmap(b1, squareWidth * x, 147 + statusBarHeight + squareHeight * y, squareWidth * (x + 1), squareHeight * (y + 1 ) - 53);
         view.destroyDrawingCache();
         this.savePic(b);
+        Toast toast = Toast.makeText(getReactApplicationContext(),
+                "Screenshot taken, check your gallery",
+                Toast.LENGTH_SHORT);
+
+        toast.show();
         callback.invoke(true);
     }
 

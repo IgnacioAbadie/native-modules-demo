@@ -29,5 +29,12 @@ export default StyleSheet.create({
   },
   highlight: {
     borderColor: 'red'
+  },
+  screenshotTaken: {
+    margin: 10,
+    position: 'absolute',
+    left: 0,
+    bottom: 0,
+    zIndex: 10
   }
 });
