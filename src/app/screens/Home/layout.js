@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, ImageBackground, FlatList } from 'react-native';
+import { View, ImageBackground, FlatList, SafeAreaView } from 'react-native';
 import CustomButton from '@components/CustomButton';
 import CustomText from '@app/components/CustomText';
 import BackgroundImage from '@assets/background.jpg';
@@ -16,22 +16,24 @@ export default function Home({
   screenshotsTaken
 }) {
   return (
-    <View style={styles.container}>
-      <ImageBackground source={BackgroundImage} style={styles.background}>
-        <FlatList
-          data={areas}
-          extraData={selected}
-          keyExtractor={keyExtractor}
-          style={styles.grid}
-          renderItem={renderSquare}
-          numColumns={3}
-        />
-      </ImageBackground>
-      <CustomButton onPress={onTakeScreenshot} green title="Take!" style={styles.mainButton} />
-      <CustomText white big style={styles.screenshotTaken}>
-        Taken {screenshotsTaken}
-      </CustomText>
-    </View>
+    <SafeAreaView style={styles.safeArea}>
+      <View style={styles.container}>
+        <ImageBackground source={BackgroundImage} style={styles.background}>
+          <FlatList
+            data={areas}
+            extraData={selected}
+            keyExtractor={keyExtractor}
+            style={styles.grid}
+            renderItem={renderSquare}
+            numColumns={3}
+          />
+        </ImageBackground>
+        <CustomButton onPress={onTakeScreenshot} green title="Take!" style={styles.mainButton} />
+        <CustomText white big style={styles.screenshotTaken}>
+          Taken {screenshotsTaken}
+        </CustomText>
+      </View>
+    </SafeAreaView>
   );
 }
 

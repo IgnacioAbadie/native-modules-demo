@@ -17,7 +17,8 @@ module.exports = {
     'import/extensions': [
       'error',
       {
-        js: 'never'
+        js: 'never',
+        jpg: 'always'
       }
     ],
     'import/named': 'error',

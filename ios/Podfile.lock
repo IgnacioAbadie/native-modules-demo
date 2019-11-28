@@ -182,7 +182,7 @@ PODS:
     - React-cxxreact (= 0.61.4)
     - React-jsi (= 0.61.4)
   - React-jsinspector (0.61.4)
-  - react-native-config (0.12.0):
+  - react-native-config (0.11.7):
     - React
   - react-native-splash-screen (3.2.0):
     - React
@@ -356,7 +356,7 @@ SPEC CHECKSUMS:
   React-jsi: f9126dd5818fbd8fbf869be9bbc1c0543973e1a1
   React-jsiexecutor: 752f034d0f007d1141a1c52ba9ef3fd9668fbfa7
   React-jsinspector: 044105eea064aec81adc5e4d777a8f6589e7d094
-  react-native-config: 39fb6bf780040eebdd52184a4198ae95d1c2a75c
+  react-native-config: 8c2a92aa66a6cec1a23d9eda7ba6fcf31a63ace5
   react-native-splash-screen: a49be22f0f6648b8416f3bd28258645eeaa5b42b
   React-RCTActionSheet: 49433f6e3659ba5d3ee650e44b9c18743ef9a7fc
   React-RCTAnimation: 12f86a4e3542032329366b03bca2cc254a7c64a9

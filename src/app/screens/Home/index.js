@@ -28,7 +28,7 @@ class HomeContainer extends Component {
   };
 
   handleTakeScreenshot = () => {
-    ScreenshotHelperModule.takeScreenshot(this.callback); // , this.state.selected.x, this.state.selected.y);
+    ScreenshotHelperModule.takeScreenshot(this.callback);
   };
 
   handleSelected = selected => {

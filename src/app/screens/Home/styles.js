@@ -2,6 +2,10 @@ import { StyleSheet } from 'react-native';
 import { green } from '@constants/colors';
 
 export default StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#333'
+  },
   container: {
     flex: 1,
     alignItems: 'center',
