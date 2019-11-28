@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* native_modules_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* native_modules_demoTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -17,14 +18,16 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* native_modules_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* native_modules_demoTests.m */; };
-		7C4D41517382BDD34F8B281B /* libPods-native_modules_demo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA93A312FC8938CD54997545 /* libPods-native_modules_demo-tvOSTests.a */; };
-		BDC04ED25FC3AB38735D9132 /* libPods-native_modules_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5F53FB483DFBFCDDB4F1DC /* libPods-native_modules_demo.a */; };
-		F4D07F4492434FAD82570CDA /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35003D7ACF934B529B31C1F2 /* Montserrat-Bold.ttf */; };
 		548B765F87764D15BE0D5C65 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5D239884B8C42BE950FD768 /* Montserrat-BoldItalic.ttf */; };
+		5E1789B12390488300B54C77 /* ScreenshotHelperModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1789B02390488300B54C77 /* ScreenshotHelperModuleManager.swift */; };
+		5E1789B3239048E800B54C77 /* ScreenshotHelperModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1789B2239048E800B54C77 /* ScreenshotHelperModuleManager.m */; };
+		61803724F00347459A91771D /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECCC6777B145435F89DAFE14 /* Montserrat-SemiBoldItalic.ttf */; };
+		7C4D41517382BDD34F8B281B /* libPods-native_modules_demo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA93A312FC8938CD54997545 /* libPods-native_modules_demo-tvOSTests.a */; };
+		B1F10099BD55480C800E4099 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34BE3407778D45F882435268 /* Montserrat.ttf */; };
+		BDC04ED25FC3AB38735D9132 /* libPods-native_modules_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5F53FB483DFBFCDDB4F1DC /* libPods-native_modules_demo.a */; };
 		C38A6ED173E04B75831440E0 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ECF55BBD6D24B5586069031 /* Montserrat-Italic.ttf */; };
 		DBCEC531EC2A4D4D8CE037FF /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 210B958E64224857B1920937 /* Montserrat-SemiBold.ttf */; };
-		61803724F00347459A91771D /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECCC6777B145435F89DAFE14 /* Montserrat-SemiBoldItalic.ttf */; };
-		B1F10099BD55480C800E4099 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34BE3407778D45F882435268 /* Montserrat.ttf */; };
+		F4D07F4492434FAD82570CDA /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35003D7ACF934B529B31C1F2 /* Montserrat-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,28 +59,31 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = native_modules_demo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = native_modules_demo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = native_modules_demo/main.m; sourceTree = "<group>"; };
+		210B958E64224857B1920937 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* native_modules_demo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "native_modules_demo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* native_modules_demo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "native_modules_demo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BE3407778D45F882435268 /* Montserrat.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Montserrat.ttf; path = ../assets/fonts/Montserrat.ttf; sourceTree = "<group>"; };
+		35003D7ACF934B529B31C1F2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		44F22B0F803F8908C24DE3E5 /* Pods-native_modules_demo-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native_modules_demo-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-native_modules_demo-tvOSTests/Pods-native_modules_demo-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		463715742C068ED0E1824222 /* libPods-native_modules_demo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-native_modules_demo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B4BBDC8633D1712385010F /* Pods-native_modules_demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native_modules_demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-native_modules_demoTests/Pods-native_modules_demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5AE940AC6949F0FA795973FF /* Pods-native_modules_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native_modules_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-native_modules_demo/Pods-native_modules_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		5D5F53FB483DFBFCDDB4F1DC /* libPods-native_modules_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-native_modules_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1789AF2390488200B54C77 /* native_modules_demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "native_modules_demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E1789B02390488300B54C77 /* ScreenshotHelperModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotHelperModuleManager.swift; sourceTree = "<group>"; };
+		5E1789B2239048E800B54C77 /* ScreenshotHelperModuleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenshotHelperModuleManager.m; sourceTree = "<group>"; };
+		5ECF55BBD6D24B5586069031 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Italic.ttf"; path = "../assets/fonts/Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		6250C7214532912E5254AC29 /* Pods-native_modules_demo-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native_modules_demo-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-native_modules_demo-tvOSTests/Pods-native_modules_demo-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A493EB09235C6898D282D99 /* Pods-native_modules_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native_modules_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-native_modules_demo/Pods-native_modules_demo.release.xcconfig"; sourceTree = "<group>"; };
 		6E92D34427D5AB5DA729BEBB /* Pods-native_modules_demo-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native_modules_demo-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-native_modules_demo-tvOS/Pods-native_modules_demo-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		D5D239884B8C42BE950FD768 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-BoldItalic.ttf"; path = "../assets/fonts/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		DA93A312FC8938CD54997545 /* libPods-native_modules_demo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-native_modules_demo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE83D32F0C4EFE68E5DB4437 /* Pods-native_modules_demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native_modules_demoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-native_modules_demoTests/Pods-native_modules_demoTests.release.xcconfig"; sourceTree = "<group>"; };
 		E4B02EB1BF060F7ABFD754D8 /* Pods-native_modules_demo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native_modules_demo-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-native_modules_demo-tvOS/Pods-native_modules_demo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ECCC6777B145435F89DAFE14 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBoldItalic.ttf"; path = "../assets/fonts/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F0751CA152787972C52E4DFB /* libPods-native_modules_demoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-native_modules_demoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35003D7ACF934B529B31C1F2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D5D239884B8C42BE950FD768 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-BoldItalic.ttf"; path = "../assets/fonts/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5ECF55BBD6D24B5586069031 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; name = "Montserrat-Italic.ttf"; path = "../assets/fonts/Montserrat-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		210B958E64224857B1920937 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		ECCC6777B145435F89DAFE14 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-SemiBoldItalic.ttf"; path = "../assets/fonts/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		34BE3407778D45F882435268 /* Montserrat.ttf */ = {isa = PBXFileReference; name = "Montserrat.ttf"; path = "../assets/fonts/Montserrat.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				5E1789B02390488300B54C77 /* ScreenshotHelperModuleManager.swift */,
+				5E1789AF2390488200B54C77 /* native_modules_demo-Bridging-Header.h */,
+				5E1789B2239048E800B54C77 /* ScreenshotHelperModuleManager.m */,
 			);
 			name = native_modules_demo;
 			sourceTree = "<group>";
@@ -210,7 +219,7 @@
 			sourceTree = "<group>";
 		};
 		F56C70C94EC64F5091F22483 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				35003D7ACF934B529B31C1F2 /* Montserrat-Bold.ttf */,
 				D5D239884B8C42BE950FD768 /* Montserrat-BoldItalic.ttf */,
@@ -221,7 +230,6 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -317,6 +325,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1030;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -333,6 +344,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -559,6 +571,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1789B12390488300B54C77 /* ScreenshotHelperModuleManager.swift in Sources */,
+				5E1789B3239048E800B54C77 /* ScreenshotHelperModuleManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -613,6 +627,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49B4BBDC8633D1712385010F /* Pods-native_modules_demoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -636,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE83D32F0C4EFE68E5DB4437 /* Pods-native_modules_demoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = native_modules_demoTests/Info.plist;
@@ -657,6 +673,7 @@
 			baseConfigurationReference = 5AE940AC6949F0FA795973FF /* Pods-native_modules_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = native_modules_demo/Info.plist;
@@ -668,6 +685,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wolox.native_modules_demo;
 				PRODUCT_NAME = native_modules_demo;
+				SWIFT_OBJC_BRIDGING_HEADER = "native_modules_demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -678,6 +698,7 @@
 			baseConfigurationReference = 6A493EB09235C6898D282D99 /* Pods-native_modules_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = native_modules_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -688,6 +709,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wolox.native_modules_demo;
 				PRODUCT_NAME = native_modules_demo;
+				SWIFT_OBJC_BRIDGING_HEADER = "native_modules_demo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
