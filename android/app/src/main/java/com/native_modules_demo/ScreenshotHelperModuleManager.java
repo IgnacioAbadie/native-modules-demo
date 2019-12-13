@@ -22,15 +22,22 @@ import java.util.Date;
 
 
 public class ScreenshotHelperModuleManager extends ReactContextBaseJavaModule {
+
+    // CONSTRUCTOR WITH REACT CONTEXT
     public ScreenshotHelperModuleManager (ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
+    // HERE MODULE NAME!  <--- USE SAME THAT iOS ;)
     @Override
     public String getName() {
         return "ScreenshotHelperModule";
     }
 
+
+
+
+    // HERE PUBLIC FOR JS
     @RequiresApi(api = Build.VERSION_CODES.N)
     @ReactMethod
     public void takeScreenshot(Integer x, Integer y, Callback callback) {
@@ -43,7 +50,6 @@ public class ScreenshotHelperModuleManager extends ReactContextBaseJavaModule {
         activity.getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
         int statusBarHeight = frame.top;
 
-        //Find the screen dimensions to create bitmap in the same size.
         int width = activity.getWindowManager().getDefaultDisplay().getWidth();
         int height = activity.getWindowManager().getDefaultDisplay().getHeight();
 
@@ -62,12 +68,17 @@ public class ScreenshotHelperModuleManager extends ReactContextBaseJavaModule {
         callback.invoke(true);
     }
 
+
+
+    // HERE PRIVATE FOR JS
     public Bitmap processView(View view) {
         view.setDrawingCacheEnabled(true);
         view.buildDrawingCache();
         return view.getDrawingCache();
     }
 
+
+    // HERE PRIVATE FOR JS
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void savePic(Bitmap b) {
         try {

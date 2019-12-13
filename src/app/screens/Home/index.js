@@ -33,7 +33,6 @@ class HomeContainer extends Component {
   };
 
   handleSelected = selected => {
-    console.log(NativeModules);
     this.setState({ selected });
   };
 
