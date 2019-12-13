@@ -33,9 +33,7 @@ public class ScreenshotHelperModuleManager extends ReactContextBaseJavaModule {
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @ReactMethod
-    public void takeScreenshot(Callback callback) {
-    Integer x = 0;
-        Integer y = 0;
+    public void takeScreenshot(Integer x, Integer y, Callback callback) {
         Activity activity = getCurrentActivity();;
         View view = activity.getWindow().getDecorView();
         view.setDrawingCacheEnabled(true);
@@ -49,11 +47,11 @@ public class ScreenshotHelperModuleManager extends ReactContextBaseJavaModule {
         int width = activity.getWindowManager().getDefaultDisplay().getWidth();
         int height = activity.getWindowManager().getDefaultDisplay().getHeight();
 
-        int screenHeight = height - statusBarHeight - 147;
+        int screenHeight = height - statusBarHeight - 310;
         int squareWidth = width / 3;
         int squareHeight = screenHeight / 3;
 
-        Bitmap b = Bitmap.createBitmap(b1, squareWidth * x, 147 + statusBarHeight + squareHeight * y, squareWidth * (x + 1), squareHeight * (y + 1 ) - 53);
+        Bitmap b = Bitmap.createBitmap(b1, squareWidth * x, 147 + statusBarHeight + squareHeight * y, squareWidth, squareHeight);
         view.destroyDrawingCache();
         this.savePic(b);
         Toast toast = Toast.makeText(getReactApplicationContext(),
