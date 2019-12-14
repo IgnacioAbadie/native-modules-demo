@@ -31,9 +31,9 @@ class ScreenshotHelperModule: NSObject {
       UIGraphicsEndImageContext()
       
       // Crop Screenshot
-      let horizontalField = x
-      let verticalField = y
-      let crop = CGRect(x: (250 * Int(truncating: verticalField)), y: 127 + (360 * Int(truncating: horizontalField)), width: 250, height: 360)
+      let verticalField = x
+      let horizontalField = y
+      let crop = CGRect(x: (250 * Int(truncating: horizontalField)), y: 127 + (360 * Int(truncating: verticalField)), width: 250, height: 360)
       let cgImage = screenshot?.cgImage?.cropping(to: crop)
       let croppedImage: UIImage = UIImage(cgImage: cgImage!)
       
