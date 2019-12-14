@@ -38,7 +38,11 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App quiere poder guardar imagenes en tu galeria</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App quiere poder guardar imagenes en tu galeria</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
